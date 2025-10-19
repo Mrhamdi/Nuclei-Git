@@ -25,7 +25,8 @@ jobs:
       - name: Run Nuclei scan
         run: |
           # Example target: your deployed app or URL list
-          echo "https://example.com" > targets.txt
+          echo "https://gameworld.tn" > targets.txt
+          echo "https://gamezone.tn"  > targets.txt
 
           # Run scan
           ~/go/bin/nuclei -l targets.txt -o nuclei-results.txt -severity low,medium,high,critical
